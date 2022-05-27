@@ -14,7 +14,7 @@ const submitBtn = document.getElementById("submitBtn");
 
 submitBtn.addEventListener("click", function () {
     let wordValue = word.value;
-    const re = /[a-z]\w+/;
+    const re = /^[a-z].+$\gi/;
     let boolVerifica = false;
     while (!boolVerifica){
         if (re.test(wordValue)){
